@@ -13,3 +13,17 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 let g:syntastic_c_include_dirs = [ '../include', 'include', '/usr/include', '/usr/local/include' ]
+
+vmap <C-C> :!xclip -f -sel clip<CR>
+map <C-V> :-1r !xclip -o -sel clip<CR>
+imap <C-V> <C-O>:-1r !xclip -o -sel clip<CR>
+
+
+
+
+
+
+
+
+
+
